@@ -83,8 +83,13 @@ app.get("/poweroff", (req, res) => {
   }else{
   jsonData.PoweredOn= false;
   let configs = {
+<<<<<<< HEAD
     "action": "poweroff",
     "ack": "false",
+=======
+    "action": "poweron",
+    "ack": "true",
+>>>>>>> 4682aee0adc3e0d483f9982f88730e3ca9a527b9
     "BrightnessLevel":jsonData.BrightnessLevel,
   }
   res.status(200).json({ configs });
