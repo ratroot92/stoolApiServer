@@ -124,7 +124,10 @@ app.get("/getparameters", (req, res) => {
   }
   res.status(200).json({ configs });
 });
-
+app.get('/', (req, res) => {
+res.status(200).send({"appName":"Stool Api Server",
+"DeployedBy":"Ahmed Kabeer Shaukat"})
+})
 app.get('/testapi/header_data', (req, res) => {
   let data = {
     'status': '',
